@@ -1,0 +1,9 @@
+---
+applications:
+- name: jerome-saltmarsh-eureka-server
+  path: target/eureka-server-0.0.1-SNAPSHOT.jar
+  host: jerome-saltmarsh-eureka-server
+  domain: cfapps.io
+  memory: 1024m
+  instances: 1
+

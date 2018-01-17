@@ -2,9 +2,11 @@ package com.example.serviceb;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
 
+@EnableDiscoveryClient
 @EnableFeignClients("com.example.serviceb")
 @SpringBootApplication
 public class Application {

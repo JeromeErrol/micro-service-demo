@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class ServiceBController {
 
     @Autowired
-    private ServiceB serviceB;
+    private ServiceA serviceB;
 
     @GetMapping("/hello")
     public String hello(){
-        return "service b call a and received : " + serviceB.getServiceAMessage();
+        return "service b call a and received : " + serviceB.hello();
     }
 }
